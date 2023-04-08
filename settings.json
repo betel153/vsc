@@ -1,0 +1,219 @@
+{
+  "editor.renderLineHighlight": "all", // 選択行のハイライト
+  "editor.renderWhitespace": "boundary", // 半角スペースの表示
+  "editor.snippetSuggestions": "top", // スニペット候補の表示（Emmet）
+  "editor.wordWrap": "on", // エディターの幅で折り返し
+  "editor.insertSpaces": true, // 空白文字でスペース
+  "editor.mouseWheelZoom": true, // Ctrl押しながらズーム
+  "editor.colorDecorators": false, // カラーデコレーターを非表示
+  "editor.formatOnType": true, // 入力した行を自動でフォーマット
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+  "emmet.triggerExpansionOnTab": true, // 貼り付け内容を自動フォーマットする
+  "emmet.variables": {
+    // Emmet で展開される言語を変更
+    "lang": "ja"
+  },
+  "files.associations": {
+    // ファイルと言語の関連付けを変更
+    ".*lintrc": "json"
+  },
+  "files.exclude": {
+    // エクスプローラーから非表示にするファイル
+    "**/*.map": true,
+    "**/*.pyc": {"when": "$(basename).py"},
+    "**/__pycache__": true,
+    // "**/node_modules": true
+  },
+  "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+  "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+  "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+  "search.exclude": {
+    // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+    "**/tmp": true
+  },
+  "files.watcherExclude": {
+    // VS Code file watcherから除外
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/dataset/**/*.{png,zip,jpg,npz}": true,
+    "**/datasets/**/*.{png,zip,jpg,npz}": true,
+    "**/*.pyc": {"when": "$(basename).py"},
+    "**/__pycache__": true,
+  },
+  "window.openFoldersInNewWindow": "on", // 新規ワークスペースを別ウインドウで開く
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}", // ウインドウ上部に表示する文字列の設定
+  "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
+  "workbench.editor.tabSizing": "shrink", // タブの表示設定
+  "explorer.confirmDragAndDrop": false,
+  "workbench.sideBar.location": "right", // サイドバーの位置：右
+
+  "files.encoding": "utf8",
+
+  // Git
+  "git.autofetch": true,
+  "diffEditor.renderSideBySide": false, // Git の差分を行内に表示
+
+  // Python
+  "python.formatting.provider": "autopep8",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    // E501：1行79文字制限
+    // W503：二項演算子の前に改行が存在
+    // W293：空行に空白
+      "--ignore=E501,W503, W293"
+  ],
+  "python.sortImports.args": [
+      "-m 3"
+  ],
+  // 保存時にlintingをチェックする
+  "python.linting.lintOnSave": true,
+  // 保存時に自動整形
+  "editor.formatOnSave" : true,
+
+  "[python]": {
+    "editor.tabSize": 4,　// インデントレベルは「2」
+  },
+
+  // HTML
+  "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+  "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+  "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+  "html.autoClosingTags": false, // HTML タグの自動クローズを有効/無効にします。
+
+  "workbench.startupEditor": "newUntitledFile",
+  "telemetry.enableCrashReporter": false,
+  "update.showReleaseNotes": false,
+  "telemetry.enableTelemetry": false,
+  "files.autoSave": "afterDelay", // 自動保存
+  "files.autoSaveDelay": 1000, // 1秒ごと
+  "workbench.iconTheme": "vscode-icons",
+  "files.eol": "\n",
+
+  "vsicons.dontShowNewVersionMessage": true,
+  "terminal.integrated.inheritEnv": false,
+"git.enableSmartCommit": true,
+"python.languageServer": "Pylance",
+"diffEditor.ignoreTrimWhitespace": false,
+"workbench.editorAssociations": {
+  "*.ipynb": "jupyter-notebook"
+},
+"settingsSync.ignoredExtensions": [
+
+
+],
+"settingsSync.ignoredSettings": [
+
+],
+"cSpell.userWords": [
+  "accandm",
+  "accandmiou",
+  "add",
+  "arange",
+  "asarray",
+  "ascontiguousarray",
+  "astype",
+  "bcwh",
+  "cmap",
+  "coeff",
+  "contourf",
+  "conv",
+  "convert",
+  "crossentropy",
+  "cuda",
+  "cudnn",
+  "dataloader",
+  "densecrf",
+  "detectron",
+  "dropna",
+  "dtype",
+  "einsum",
+  "eval",
+  "fext",
+  "flist",
+  "fname",
+  "hacky",
+  "hparams",
+  "iddataset",
+  "imgh",
+  "imglist",
+  "imgs",
+  "imgw",
+  "imread",
+  "imsave",
+  "imshow",
+  "imwrite",
+  "inpaint",
+  "inpaintator",
+  "inpainting",
+  "inpaintings",
+  "io",
+  "isfinite",
+  "loss",
+  "lstm",
+  "lvis",
+  "mkdirs",
+  "model",
+  "nargs",
+  "ndarray",
+  "ndim",
+  "ndimage",
+  "nsgan",
+  "ntfy",
+  "numpy",
+  "ogrid",
+  "optim",
+  "overfitting",
+  "panoinp",
+  "pbar",
+  "pretrained",
+  "psnr",
+  "pyplot",
+  "pytorch",
+  "registry",
+  "relu",
+  "rmse",
+  "scipy",
+  "segmentor",
+  "segoutputs",
+  "segs",
+  "semantic",
+  "shimosato",
+  "sklearn",
+  "start",
+  "syncbn",
+  "tensorboard",
+  "tqdm",
+  "u",
+  "uint",
+  "unet",
+  "unsqueeze",
+  "vmax",
+  "vmin",
+  "weight",
+  "zfill"
+],
+// 日本語誤検出防止
+"cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"],
+
+"tabnine.experimentalAutoImports": true,
+"gitlens.hovers.currentLine.over": "line",
+"gitlens.defaultDateFormat": null,
+"notebook.cellToolbarLocation": {
+  "default": "right",
+  "jupyter-notebook": "left"
+},
+// フォントサイズ
+"debug.console.fontSize": 15,
+"terminal.integrated.fontSize": 15,
+"editor.fontSize": 16,
+"editor.guides.bracketPairs": true,
+"editor.bracketPairColorization.enabled": true,
+"git.confirmSync": false,
+"remote.SSH.connectTimeout": 10000,
+"editor.guides.indentation": true,
+}
